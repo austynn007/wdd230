@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Fonts - replace with your actual font choices */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Lato:wght@400;700&display=swap');
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark grey for text */
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Header styles */
+header {
+    background-color: #0072bc; /* Vibrant blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading styles - using Lato for contrast */
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    color: #0072bc; /* Using primary color for headings */
+    margin-bottom: 10px;
+}
+
+/* Basic layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sections for content organization */
+.section {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styles */
+a {
+    color: #ffcc00; /* Yellow for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff9900; /* Darker yellow on hover */
+}
+
+/* Basic responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* or any background you prefer */
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .section img {
+        width: 100%;
+    }
+}
