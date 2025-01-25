@@ -20,9 +20,9 @@ h1, h2, h3 {
     }
 
     header {
-        background-color: #3498db; /* Replace with your desired blue color */
+        background-color: #2c3e50; /* Darker blue for better contrast with white */
         padding: 20px;
-        text-align: center; /* Center the content */
+        text-align: center;
     }
 
     header .container {
@@ -42,45 +42,59 @@ h1, h2, h3 {
         color: #fff;
         font-weight: 900; /* Extra bold */
     }
-    
+
     /* Navigation */
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
+    #main-nav {
+        display: block; /* Show on larger screens */
+    }
+
+    #main-nav ul {
+        flex-direction: row; /* Change to horizontal for larger screens */
         justify-content: space-around;
         width: 100%;
         padding: 0;
         margin: 0;
         list-style: none;
     }
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    nav ul li {
+    #main-nav ul li {
         margin-right: 20px;
     }
 
-    nav ul li a {
+    #main-nav ul li a {
         color: #fff;
         text-decoration: none;
         transition: color 0.2s ease;
     }
 
-    nav ul li a:hover {
-        color: var(--secondary-color);
+    #main-nav ul li a:hover {
+        color: #f1c40f; /* Bright color for visibility on dark background */
+    }
+
+    /* Hide hamburger but keep mode visible */
+    #hamburger {
+        display: none;
+    }
+
+    #mode {
+        display: block; /* Display mode toggle on desktop */
+        position: absolute;
+        top: 20px; /* Adjust this value according to your layout */
+        right: 20px; /* Adjust this value according to your layout */
+        font-size: 2rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
     }
 
     /* Main Content */
-
     h1 {
-        color: #000; /* Black color */
+        color: #000; /* Black has excellent contrast with most backgrounds */
     }
 
     .card {
@@ -105,17 +119,20 @@ h1, h2, h3 {
     }
 
     .card h2 {
-        background-color: #3498db; /* Replace with your desired color */
+        background-color: #2c3e50; /* Darker blue for better contrast with white */
         padding: 10px;
         text-align: center;
-        color: #fff; /* Optional: Set text color */
-        width: 100%; /* Add this */
-        display: block; /* Add this */
+        color: #fff;
+        width: 100%;
+        display: block;
     }
+
+    /* Dark Mode Styles for larger screens */
+    /* No need for specific dark mode styles here since it's handled in base.css */
 
     /* Footer */
     footer {
-        background-color: var(--primary-color);
+        background-color: #2c3e50; /* Darker blue for better contrast */
         color: #fff;
         padding: 1em;
         text-align: center;
@@ -123,7 +140,7 @@ h1, h2, h3 {
     }
 
     p#lastModified {
-        color: rgb(243, 243, 12);
+        color: #fff; /* White on dark blue for high contrast */
     }
 
     footer p {
@@ -131,4 +148,18 @@ h1, h2, h3 {
     }
 }
 
+@media only screen and (min-width: 38rem) {
 
+    #hamburger {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justice-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255,255,255,0.2)
+    }
+} /*end media query*/

@@ -10,4 +10,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (lastModifiedElement) {
         lastModifiedElement.textContent = `Last Updated: ${document.lastModified}`;
     }
+
+    // Dark Mode Toggle
+    const modeBtn = document.getElementById('mode');
+    if (modeBtn) {
+        modeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    }
+});
+
+const hamburgerElement = document.querySelector('#hamburger');
+const navElement = document.querySelector('.menuLinks');
+
+hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open')
 });

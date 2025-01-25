@@ -5,15 +5,15 @@
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
 
 /* Color Schema */
 :root {
-    --primary-color: #3498db;
+    --primary-color: #2c3e50; /* Darker blue for better contrast */
     --secondary-color: #f1c40f;
     --background-color: #f9f9f9;
     --text-color: #333;
@@ -34,40 +34,106 @@ h2 {
     font-size: 2em;
 }
 
-/* Navigation */
-nav {
+/* Header Styles */
+header {
+    position: relative; /* For absolute positioning of buttons */
     background-color: var(--primary-color);
     padding: 1em;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
+
+/* Mode Toggle Button */
+#mode {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
 }
 
-nav ul li {
-    margin-bottom: 10px;
+.dark-mode {
+    --main-background-color: #333;
+    --main-text-color: #fff;
+    --primary-color: #444;
 }
 
-nav ul li a {
+/* Apply dark mode only to the main content area */
+.dark-mode main {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+/* Ensure other elements don't change their background */
+.dark-mode header, .dark-mode nav, .dark-mode footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* If you want to adjust the card's appearance in dark mode */
+.dark-mode .card {
+    background-color: var(--primary-color);  /* Darker card for contrast */
+    color: var(--main-text-color);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+}
+
+#hamburger::before {
+    //content: "=";
+}
+
+#hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
     color: #fff;
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
-nav ul li a:hover {
-    color: var(--secondary-color);
+li.current-menu-item a {
+    background-color: rgba(0,0,0,0.2);
 }
+
+ul.menuLinks {
+    display: none;
+    list-style-type: none; /* effects large */
+}
+
+/* CSS for the open class */
+#hamburger.open::before {
+    //content: "x"
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
 
 /* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
+    background-color: #eee;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .grid-container {
@@ -100,3 +166,49 @@ footer p {
     margin-bottom: 10px;
 }
 
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    #hamburger, #mode {
+        display: block;
+    }
+
+    /* Ensure the navigation is hidden by default on mobile */
+    #main-nav {
+        display: none;
+    }
+}
+
+/* Dark Mode */
+.dark-mode {
+    --background-color: #333;
+    --text-color: #fff;
+    --primary-color: #444;
+}
+
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.5em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+#hamburger::after {
+    content: '☰';
+}
+
+#hamburger.open::after {
+    content: '✕'; /* X symbol to close */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    #hamburger, #mode {
+        display: block;
+    }
+}
