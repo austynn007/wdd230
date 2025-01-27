@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) {
+    /* Hide hamburger button on larger screens */
+    #hamburger {
+        display: none;
+    }
+
+    /* Show menu items horizontally on larger screens */
+    ul.menuLinks {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks li {
+        margin-right: 20px;
+    }
+
+    ul.menuLinks li a {
+        padding: .75rem 1vw;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+}
+
+/* Layout for main sections */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hero, .current-events {
+    grid-column: 1 / -1; /* Span across both columns */
+}
+
+.weather-card, .spotlights {
+    grid-column: auto; /* Normal flow */
+}
+
+.spotlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.spotlight {
+    flex: 1;
+}
+
+.spotlight img {
+    max-width: 100%;
+    height: auto;
+}

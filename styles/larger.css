@@ -71,6 +71,22 @@ h1, h2, h3 {
         color: #f1c40f; /* Bright color for visibility on dark background */
     }
 
+    @media only screen and (min-width: 38rem) {
+
+        #hamburger {
+            display: none;
+        }
+    
+        ul.menuLinks, ul.menuLinks.open {
+            display: flex;
+            justice-content: flex-end;
+        }
+    
+        ul.menuLinks a:hover {
+            background-color: rgba(255,255,255,0.2)
+        }
+    } /*end media query*/
+
     /* Hide hamburger but keep mode visible */
     #hamburger {
         display: none;
@@ -148,18 +164,3 @@ h1, h2, h3 {
     }
 }
 
-@media only screen and (min-width: 38rem) {
-
-    #hamburger {
-        display: none;
-    }
-
-    ul.menuLinks, ul.menuLinks.open {
-        display: flex;
-        justice-content: flex-end;
-    }
-
-    ul.menuLinks a:hover {
-        background-color: rgba(255,255,255,0.2)
-    }
-} /*end media query*/

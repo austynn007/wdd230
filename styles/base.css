@@ -42,6 +42,10 @@ header {
     text-align: center;
 }
 
+header span {
+    color: #f0f0f0; /* This off-white should offer better contrast */
+}
+
 
 /* Mode Toggle Button */
 #mode {
@@ -116,6 +120,46 @@ ul.menuLinks {
     list-style-type: none; /* effects large */
 }
 
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    #hamburger, #mode {
+        display: block;
+    }
+
+    /* Ensure the navigation is hidden by default on mobile */
+    #main-nav {
+        display: none;
+    }
+}
+
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.5em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+#hamburger::after {
+    content: '☰';
+}
+
+#hamburger.open::after {
+    content: '✕'; /* X symbol to close */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    #hamburger, #mode {
+        display: block;
+    }
+}
+
 /* CSS for the open class */
 #hamburger.open::before {
     //content: "x"
@@ -166,17 +210,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* Mobile Adjustments */
-@media (max-width: 767px) {
-    #hamburger, #mode {
-        display: block;
-    }
 
-    /* Ensure the navigation is hidden by default on mobile */
-    #main-nav {
-        display: none;
-    }
-}
 
 /* Dark Mode */
 .dark-mode {
@@ -185,30 +219,3 @@ footer p {
     --primary-color: #444;
 }
 
-/* Hamburger Button */
-#hamburger {
-    display: none; /* Hide by default */
-    font-size: 1.5em;
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #fff;
-}
-
-#hamburger::after {
-    content: '☰';
-}
-
-#hamburger.open::after {
-    content: '✕'; /* X symbol to close */
-}
-
-/* Mobile Adjustments */
-@media (max-width: 767px) {
-    #hamburger, #mode {
-        display: block;
-    }
-}
