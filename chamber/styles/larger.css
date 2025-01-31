@@ -1,3 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #222;
+}
+
+nav ul.menuLinks li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul.menuLinks li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    font-family: 'Merriweather', serif;
+}
+
+.sidebar h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sidebar p, .sidebar ul {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Main Content Styles */
+.main-content {
+    font-family: 'Merriweather', serif;
+}
+
+.main-content figcaption {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
 @media only screen and (min-width: 768px) {
     /* Hide hamburger button on larger screens */
     #hamburger {
@@ -16,42 +92,56 @@
 
     ul.menuLinks li a {
         padding: .75rem 1vw;
-        color: #fff;
-        text-decoration: none;
     }
 
-    ul.menuLinks a:hover {
-        background-color: rgba(255,255,255,0.2);
+    /* Layout for main sections */
+    main {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 20px;
+    }
+
+    .sidebar {
+        grid-column: 1 / 2;
+    }
+
+    .main-content {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .hero, .current-events {
+        grid-column: 1 / -1;
+    }
+
+    .weather-card, .spotlights {
+        grid-column: auto;
+    }
+
+    .spotlights {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .spotlight {
+        flex: 1;
+    }
+
+    .spotlight img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* Layout for main sections */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.hero, .current-events {
-    grid-column: 1 / -1; /* Span across both columns */
-}
-
-.weather-card, .spotlights {
-    grid-column: auto; /* Normal flow */
-}
-
-.spotlights {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.spotlight {
-    flex: 1;
-}
-
-.spotlight img {
-    max-width: 100%;
-    height: auto;
+/* Updated Footer styles for AAA contrast */
+footer {
+    background-color: #b0e0e6;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
 }

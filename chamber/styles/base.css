@@ -107,11 +107,67 @@ ul.menuLinks.open {
     border-radius: 5px;
 }
 
-/* Updated Footer styles for AAA contrast */
-footer {
-    background-color: #b0e0e6;
-    color: #000;
+/* Discover Page Layout */
+.discover-layout {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Single column for mobile */
+}
+
+@media (min-width: 768px) {
+    .discover-layout {
+        grid-template-columns: 300px 1fr; /* Sidebar and main content for desktop */
+    }
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery figure {
+    margin: 0;
     text-align: center;
-    padding: 20px 0;
-    clear: both;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile View: Disable Hover Effect */
+@media (max-width: 767px) {
+    .gallery img:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+.gallery img {
+    width: 100%; /* Ensures the image scales with its container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
