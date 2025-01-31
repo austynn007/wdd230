@@ -38,14 +38,13 @@ h2 {
 header {
     position: relative; /* For absolute positioning of buttons */
     background-color: var(--primary-color);
-    padding: 1em;
+    padding: 0; /* Remove padding to eliminate gap */
     text-align: center;
 }
 
 header span {
     color: #f0f0f0; /* This off-white should offer better contrast */
 }
-
 
 /* Mode Toggle Button */
 #mode {
@@ -138,7 +137,7 @@ ul.menuLinks {
     font-size: 1.5em;
     position: absolute;
     top: 1em;
-    left: 1em;
+    left: 1em; /* Move to the right side */
     cursor: pointer;
     background: none;
     border: none;
@@ -169,12 +168,11 @@ ul.menuLinks.open {
     display: block;
 }
 
-
 /* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2em;
+    padding: 0; /* Remove padding to eliminate gap */
     background-color: #eee;
     color: #000;
     transition: background-color 0.3s, color 0.3s;
@@ -210,8 +208,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-
-
 /* Dark Mode */
 .dark-mode {
     --background-color: #333;
@@ -219,3 +215,35 @@ footer p {
     --primary-color: #444;
 }
 
+/* Hero Container and Overlay for Smaller View */
+.hero-container {
+    position: relative;
+    margin-top: 0; /* Ensure no top margin */
+    margin-bottom: 20px;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem; /* Adjusted for smaller screens */
+    white-space: nowrap;
+}
+
+/* Adjust overlay for smaller screens */
+@media (max-width: 767px) {
+    .overlay {
+        font-size: 1rem; /* Smaller font size for mobile */
+        bottom: 10px; /* Adjusted position for mobile */
+        left: 10px; /* Adjusted position for mobile */
+    }
+}

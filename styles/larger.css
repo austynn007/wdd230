@@ -87,6 +87,29 @@ h1, h2, h3 {
         }
     } /*end media query*/
 
+    /* Hero Container */
+.hero-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 40%;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
     /* Hide hamburger but keep mode visible */
     #hamburger {
         display: none;
