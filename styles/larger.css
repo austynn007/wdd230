@@ -102,7 +102,7 @@ h1, h2, h3 {
 
 .overlay {
     position: absolute;
-    bottom: 40%;
+    bottom: 70%;
     left: 20px;
     background: rgba(0, 0, 0, 0.7);
     color: white;
@@ -110,6 +110,7 @@ h1, h2, h3 {
     font-size: 1.5rem;
     white-space: nowrap;
 }
+
 
     /* Hide hamburger but keep mode visible */
     #hamburger {
