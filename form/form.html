@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Ugochukwu A. Onunkwo</title>
+    <meta name="description" content="A form page for WDD 230 - Web Frontend Development, demonstrating form validation and user experience.">
+    <meta name="author" content="Ugochukwu A. Onunkwo">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/profile.webp" alt="Ugochukwu A. Onunkwo" width="200" height="200">
+            <span>Ugochukwu A. Onunkwo</span>
+        </div>
+
+        <nav>
+            <button id="hamburger"></button>
+            <button id="mode">🕶️</button>
+            <ul class="menuLinks">
+                <li><a href="../index.html">Home</a></li> <!-- Corrected link -->
+                <li><a href="../chamber/index.html">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li class="current-menu-item"><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Account Registration</h1>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+            <!-- Username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid BYU-Idaho email address" required>
+
+            <!-- Page Rating -->
+            <label for="rating">Page Rating (1-10):</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+            <span id="ratingValue">5</span>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Ugochukwu A. Onunkwo, Anambra/Nigeria <img src="images/nigerian-flag.webp" alt="Nigerian Flag" width="30" height="15"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/validate.js"></script>
+</body>
+</html>
+
+    
+    

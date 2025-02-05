@@ -38,3 +38,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 });
+
+// Get Current Year
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+// Get Last Modified Date
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
