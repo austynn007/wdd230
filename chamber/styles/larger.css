@@ -9,7 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: #222;
+    color: #000; /* Improved contrast */
 }
 
 nav ul.menuLinks li a {
@@ -57,8 +57,8 @@ nav ul.menuLinks li a:hover {
 footer {
     font-family: 'Merriweather', serif;
     font-size: 14px;
-    color: #fff;
-    background-color: #333;
+    color: #000; /* Black text for better contrast */
+    background-color: #8fd8e8; /* Darker background */
     padding: 20px;
     text-align: center;
 }
@@ -135,15 +135,6 @@ footer p {
         max-width: 100%;
         height: auto;
     }
-}
-
-/* Updated Footer styles for AAA contrast */
-footer {
-    background-color: #b0e0e6;
-    color: #000;
-    text-align: center;
-    padding: 20px 0;
-    clear: both;
 }
 
 /* Form Styles */
