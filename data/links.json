@@ -1,0 +1,109 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        {
+          "url": "week01/chamber-site-plan.html",
+          "title": "Chamber of Commerce Site Plan"
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "chamber/index.html",
+          "title": "Chamber of Commerce Home Page"
+        },
+        {
+          "url": "week02/design.html",
+          "title": "Design Principles Document"
+        },
+        {
+          "url": "https://codepen.io/austynn007/pen/LEPgayz",
+          "title": "Responsive Menu - Completed"
+        },
+        {
+          "url": "week02/bom.html",
+          "title": "BOM Top 10 Chapters"
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week03",
+          "title": "Week 3 Activities"
+        },
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazy Loading Demo"
+        },
+        {
+          "url": "week03/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "week03/responsive-images.html",
+          "title": "Responsive Images"
+        },
+        {
+          "url": "week03/bom.html",
+          "title": "BOM Web Storage API"
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week04",
+          "title": "Week 4 Activities"
+        },
+        {
+          "url": "https://codepen.io/austynn007/pen/XJrQXvp",
+          "title": "CSS Pseudo-Classes Example"
+        },
+        {
+          "url": "week04/images/css-combinators-screenshot.webp",
+          "title": "Combinator Exercises"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Table Build Activity"
+        },
+        {
+          "url": "form/index.html",
+          "title": "Form Design Activity"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week05",
+          "title": "Week 5 Activities"
+        },
+        {
+          "url": "https://codepen.io/austynn007/pen/OPJJEWm",
+          "title": "CSS Pseudo-Elements Example"
+        },
+        {
+          "url": "week05/new-ward-members.json",
+          "title": "New Ward Members JSON"
+        },
+        {
+          "url": "week05/prophets.html",
+          "title": "Latter-day Prophets"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "Weather API"
+        }
+      ]
+    }
+  ]
+}

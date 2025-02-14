@@ -67,7 +67,9 @@
             <div class="card information">
                 <h2>Information</h2>
                 <p>Awka, <span>Nigeria</span></p>
-                <p>Weather: <span>Sunny 79 °F🌡️☀️</span></p>
+                <p>Weather: <span id="weather-condition">Loading...</span></p>
+                <p>Temperature: <span id="weather-temp">Loading...</span></p>
+                <img id="weather-icon" src="" alt="Weather Icon">
                 <p>Number of visits: <span id="visit-counter">0</span></p>
             </div>
         </div>
@@ -87,5 +89,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
