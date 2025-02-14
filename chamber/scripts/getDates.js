@@ -14,15 +14,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastModified.textContent = `Last Modified: ${document.lastModified}`;
     }
 
-    // Placeholder for weather update - would be replaced with actual API calls
-    const weatherTemperature = document.querySelector('.weather-card p:nth-child(2)');
-    const weatherCondition = document.querySelector('.weather-card p:nth-child(3)');
-
-    if (weatherTemperature && weatherCondition) {
-        weatherTemperature.textContent = `Temperature: 🌡️ ${Math.floor(Math.random() * 20 + 60)}°F`;
-        weatherCondition.textContent = `Condition: ${['Partly Cloudy', 'Sunny', 'Rainy'][Math.floor(Math.random() * 3)]}`;
-    }
-
     // Lazy loading for images
     const images = document.querySelectorAll(".main-content img[data-src]");
 

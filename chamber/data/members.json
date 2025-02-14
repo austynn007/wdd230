@@ -69,8 +69,18 @@
         "membershipLevel": "Gold",
         "email": "info@foodiedelights.com",
         "description": "Delicious meals for every occasion."
+      },
+      {
+        "name": "Ndikelionwu Butchery",
+        "image": "images/spotlight1.webp",
+        "membershipLevel": "Gold",
+        "description": "Highlighting the best of Ndikelionwu's local businesses..."
+      },
+      {
+        "name": "Ndikelionwu Mart",
+        "image": "images/spotlight2.webp",
+        "membershipLevel": "Silver",
+        "description": "Showcasing another thriving enterprise in Ndikelionwu..."
       }
     ]
   }
-
-  

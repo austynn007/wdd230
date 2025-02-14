@@ -233,3 +233,23 @@ aside {
 #directory p {
     margin: 0.25rem 0;
 }
+
+/* Weather Forecast Styles */
+#forecast-data {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.forecast-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.forecast-item p {
+    margin: 0.5rem 0;
+}

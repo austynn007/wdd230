@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
+    <div id="meet-greet-banner" class="banner">
+        <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+        <button id="close-banner">❌</button>
+    </div>
     <header>
         <div class="logo">
-            <img src="images/ndikelionwu-chamber-logo.png" alt="Ndikelionwu Chamber of Commerce Logo">
+            <img src="images/ndikelionwu-chamber-logo.webp" alt="Ndikelionwu Chamber of Commerce Logo">
         </div>
         <nav>
             <button id="hamburger"></button>
@@ -34,7 +38,7 @@
 
     <main>
         <section class="hero">
-            <img src="images/ndikelionwu-hero.jpg" alt="Welcome to Ndikelionwu Chamber" class="hero-img">
+            <img src="images/ndikelionwu-hero.webp" alt="Welcome to Ndikelionwu Chamber" class="hero-img">
             <div class="hero-content">
                 <h1>Welcome to Ndikelionwu Chamber of Commerce</h1>
                 <a href="join.html" class="cta-button">Join the Chamber</a>
@@ -51,21 +55,18 @@
 
         <section class="weather-card">
             <h2>Ndikelionwu Weather</h2>
-            <p>Temperature: 🌡️ 80°F</p>
-            <p>Condition: Partly Cloudy</p>
+            <p>Temperature: <span id="current-temp">Loading...</span></p>
+            <p>Condition: <span id="weather-condition">Loading...</span></p>
+            <div id="forecast">
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-data"></div>
+            </div>
         </section>
 
         <section class="spotlights">
             <h2>Business Spotlights</h2>
-            <div class="spotlight">
-                <img src="images/spotlight1.jpg" alt="Spotlight on Local Business 1">
-                <h3>Ndikelionwu Butchery</h3>
-                <p>Highlighting the best of Ndikelionwu's local businesses...</p>
-            </div>
-            <div class="spotlight">
-                <img src="images/spotlight2.jpg" alt="Spotlight on Local Business 2">
-                <h3>Ndikelionwu Mart</h3>
-                <p>Showcasing another thriving enterprise in Ndikelionwu...</p>
+            <div id="spotlight-container">
+                <!-- Dynamic spotlight content will be inserted here -->
             </div>
         </section>
     </main>
@@ -85,5 +86,8 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
