@@ -18,14 +18,14 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/ndikelionwu-chamber-logo.png" alt="Ndikelionwu Chamber of Commerce Logo">
+            <img src="images/ndikelionwu-chamber-logo.webp" alt="Ndikelionwu Chamber of Commerce Logo">
         </div>
         <nav>
             <button id="hamburger"></button>
             <ul class="menuLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li> 
                 <li class="current-menu-item"><a href="#">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -45,7 +45,7 @@
     
             <!-- Title/Position -->
             <label for="title">Title/Position:</label>
-            <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters, only letters, hyphens, and spaces allowed.">
+            <input type="text" id="title" name="title" pattern="[A-Za-z0-9\s-]{7,}" title="Minimum 7 characters, only letters, numbers, hyphens, and spaces allowed." required>
     
             <!-- Email -->
             <label for="email">Email:</label>
