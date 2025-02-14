@@ -1,4 +1,4 @@
-const apiKey = '85aa339587f00e3ee72f31840104dbed'; // Replace with your OpenWeatherMap API key
+const apiKey = '85aa339587f00e3ee72f31840104dbed';
 const city = 'Awka';
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
