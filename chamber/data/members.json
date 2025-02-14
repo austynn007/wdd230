@@ -1,0 +1,76 @@
+{
+    "members": [
+      {
+        "name": "Tech Solutions Inc.",
+        "address": "123 Tech Lane, Awka, Nigeria",
+        "phone": "+234 123 456 7890",
+        "website": "https://techsolutions.com",
+        "image": "images/tech-solutions.webp",
+        "membershipLevel": "Gold",
+        "email": "info@techsolutions.com",
+        "description": "Providing cutting-edge technology solutions."
+      },
+      {
+        "name": "Green Farms Ltd.",
+        "address": "456 Green Valley, Awka, Nigeria",
+        "phone": "+234 234 567 8901",
+        "website": "https://greenfarms.com",
+        "image": "images/ndikelionwu-farmland.webp",
+        "membershipLevel": "Silver",
+        "email": "contact@greenfarms.com",
+        "description": "Sustainable farming for a greener future."
+      },
+      {
+        "name": "Creative Designs Co.",
+        "address": "789 Art Street, Awka, Nigeria",
+        "phone": "+234 345 678 9012",
+        "website": "https://creativedesigns.com",
+        "image": "images/creative-designs.webp",
+        "membershipLevel": "Bronze",
+        "email": "support@creativedesigns.com",
+        "description": "Innovative designs for your brand."
+      },
+      {
+        "name": "Health Plus Clinic",
+        "address": "101 Health Road, Awka, Nigeria",
+        "phone": "+234 456 789 0123",
+        "website": "https://healthplus.com",
+        "image": "images/health-plus.webp",
+        "membershipLevel": "Gold",
+        "email": "info@healthplus.com",
+        "description": "Your health, our priority."
+      },
+      {
+        "name": "EduTech Academy",
+        "address": "202 Education Blvd, Awka, Nigeria",
+        "phone": "+234 567 890 1234",
+        "website": "https://edutechacademy.com",
+        "image": "images/edutech-academy.webp",
+        "membershipLevel": "Silver",
+        "email": "contact@edutechacademy.com",
+        "description": "Empowering learners through technology."
+      },
+      {
+        "name": "Swift Logistics",
+        "address": "303 Transport Avenue, Awka, Nigeria",
+        "phone": "+234 678 901 2345",
+        "website": "https://swiftlogistics.com",
+        "image": "images/swift-logistics.webp",
+        "membershipLevel": "Bronze",
+        "email": "support@swiftlogistics.com",
+        "description": "Fast and reliable delivery services."
+      },
+      {
+        "name": "Foodie Delights",
+        "address": "404 Food Court, Awka, Nigeria",
+        "phone": "+234 789 012 3456",
+        "website": "https://foodiedelights.com",
+        "image": "images/foodie-delights.webp",
+        "membershipLevel": "Gold",
+        "email": "info@foodiedelights.com",
+        "description": "Delicious meals for every occasion."
+      }
+    ]
+  }
+
+  
